@@ -1,0 +1,14 @@
+📦 Dataset Description: DroneCMD-4006 (English Version)
+The DroneCMD-4006 dataset included in this repository is a bilingual benchmark corpus constructed during our research on semantic deviation detection in human-machine collaborative scenarios. This version of the dataset contains English command texts and is designed to support cross-lingual and multilingual understanding tasks. Once unzipped, the dataset is ready to use.
+
+The dataset consists of a total of 4,006 manually labeled instruction pairs, categorized into two main groups that represent two typical semantic conditions:
+
+Folder 0: Contains 1,981 non-deviant instruction pairs. These examples simulate ideal human-to-UAV (drone) communication scenarios, where the semantic intent between the original command and its interpreted version is fully aligned. These are suitable for use as negative samples in training and evaluation.
+
+Folder 1: Contains 2,025 deviant instruction pairs, where semantic shifts occur due to structural alterations, information loss, or inconsistent phrasing during communication. These serve as positive samples for modeling semantic deviation detection.
+
+Each sample pair consists of two English text files: 0.txt and 1.txt, stored in a numbered folder (e.g., 0, 1, ..., 4005). These samples are well-suited for tasks such as contrastive learning, semantic similarity modeling, and instruction alignment.
+
+The dataset is specifically designed for detecting semantic inconsistency in human-machine hybrid communication, with broad applicability in real-world domains such as military communication, emergency coordination, and logistics instruction verification.
+
+We welcome researchers and developers to use this dataset responsibly and cite it appropriately in academic publications or applied projects.
